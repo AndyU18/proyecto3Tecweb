@@ -1,0 +1,141 @@
+/* src/styles/AboutUs.css */
+
+/* General */
+.about-us-page {
+    padding: 50px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    line-height: 1.6;
+  }
+  
+  /* Sección de Misión */
+  .our-mission {
+    margin-bottom: 40px;
+    position: relative;
+    background: url('../assets/images/mission-bg.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .our-mission h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  .mission-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .mission-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Sección de Equipo */
+  .our-team {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .our-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .team-member.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .team-member p {
+    font-size: 1.2rem;
+  }
+  
+  /* Testimonios */
+  .testimonials {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    background: url('../assets/images/cta-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2.5rem;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+  }
+  
+  /* Lazy Loading de imágenes */
+  img[loading="lazy"] {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+  }
+  
+  img[loading="lazy"].loaded {
+    filter: blur(0);
+  }
+  
+  /* Parallax */
+  .parallax {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  

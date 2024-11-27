@@ -1,14 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import SobreNosotros from './pages/SobreNosotros';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
+    <BrowserRouter>
       <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about-us">Sobre Nosotros</Link>
+            </li>
+            <li> <a href="/about-us" target="_blank" rel="noopener noreferrer">Sobre Nosotros redirecion</a> </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<SobreNosotros />} />
+        </Routes>
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,8 +46,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+function Home() {
+  return <h1>Home</h1>;
+}
+
+export default App;
