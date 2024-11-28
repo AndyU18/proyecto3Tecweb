@@ -5,8 +5,8 @@ import FBIWantedList from "../components/FBIWantedList";
 const Products = () => {
   return (
     <div>
-      <h1>Productos</h1>
-      <p>Conoce nuestra increíble variedad de productos.</p>
+      <h1> </h1>
+      
       <FBIWantedList />
     </div>
   );

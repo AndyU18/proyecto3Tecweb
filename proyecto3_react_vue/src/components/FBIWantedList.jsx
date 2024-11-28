@@ -29,4 +29,5 @@ const FBIWantedList = () => {
   );
 };
 
+
 export default FBIWantedList;

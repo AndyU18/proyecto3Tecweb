@@ -43,7 +43,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundColor: '#f8f9fa', // Fondo neutro para mejor presentación
+    backgroundColor: '#333', // Fondo neutro para mejor presentación
   },
   content: {
     flex: 1,

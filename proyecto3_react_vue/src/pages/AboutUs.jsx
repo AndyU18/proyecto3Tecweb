@@ -69,7 +69,13 @@ const AboutUs = () => {
         >
           <h2>Historia</h2>
           <p>
-            Fundada en el año XXXX, nuestra tienda se ha dedicado a ofrecer los mejores productos de calidad para nuestros clientes. A lo largo de los años, hemos crecido y nos hemos consolidado como una marca de confianza en el mercado.
+          Fundada en el año 2024, nuestra tienda nació con el propósito de ofrecer productos de alta calidad y un servicio excepcional a nuestros clientes. Desde el principio, nos comprometimos a ser más que solo un negocio, sino una marca que se construye sobre la confianza, la calidad y la satisfacción de quienes confían en nosotros.
+
+Con el tiempo, hemos trabajado incansablemente para crear una experiencia de compra única que combine productos innovadores con una atención personalizada, adaptándonos siempre a las necesidades y gustos de nuestros clientes. Nuestra tienda no solo se ha centrado en ofrecer productos de calidad, sino también en construir relaciones duraderas con nuestra comunidad, brindando un servicio postventa inigualable y resolviendo siempre las inquietudes de nuestros clientes.
+
+A lo largo de los años, nos hemos enfrentado a desafíos y hemos aprendido de cada uno de ellos, lo que nos ha permitido crecer y evolucionar. Cada paso que hemos dado ha sido guiado por el deseo de ser mejores y de seguir ofreciendo lo mejor para quienes nos eligen. Gracias al apoyo continuo de nuestros clientes y el esfuerzo constante de nuestro equipo, hoy nos encontramos consolidados como una marca de confianza en el mercado, reconocida por su compromiso con la calidad y la excelencia.
+
+Hoy en día, seguimos manteniendo nuestros valores fundamentales: ofrecer productos de calidad, brindar un excelente servicio al cliente y adaptarnos a las nuevas tendencias y necesidades del mercado. Nuestra historia continúa, y seguimos trabajando con pasión para superar las expectativas de nuestros clientes en cada compra.
           </p>
         </motion.section>
 

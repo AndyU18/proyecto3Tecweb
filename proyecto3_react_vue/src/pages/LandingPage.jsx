@@ -41,7 +41,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div>
+    <div style={styles.container}>
       {/* Hero Section */}
       <section style={styles.hero}>
         <ReactPlayer
@@ -120,33 +120,25 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer style={styles.footer}>
-        <div>
-          <h4>Contacto</h4>
-          <p>Email: contacto@tiendadeportiva.com</p>
-          <p>Tel: +123 456 789</p>
-        </div>
-        <div>
-          <h4>Síguenos</h4>
-          <p>Facebook | Instagram | Twitter</p>
-        </div>
-        <div>
-          <h4>Políticas</h4>
-          <p>Privacidad | Términos</p>
-        </div>
-      </footer>
     </div>
   );
 };
 
 const styles = {
+  container: {
+    maxWidth: '1200px', // Ajusta el ancho máximo de la página
+    margin: '0 auto', // Centra el contenido
+    padding: '1rem', // Espaciado interno general
+    fontFamily: "'Arial', sans-serif", // Tipografía consistente
+    backgroundColor: '', // Fondo claro por defecto
+    color: '#333', // Color del texto base
+  },
+  
   // Sección principal con video
   hero: {
     position: 'relative',
     height: '400px',
-    backgroundColor: '#000', // Fondo negro como respaldo
+    backgroundColor: '#333', // Fondo negro como respaldo
   },
   heroContent: {
     position: 'absolute',
@@ -194,7 +186,7 @@ const styles = {
   aboutSection: {
     padding: '2rem',
     textAlign: 'center',
-    backgroundColor: 'rgba(244, 244, 244, 0.9)', // Fondo gris claro con transparencia
+    backgroundColor: 'rgba(200, 244, 244, 0.9)', // Fondo gris claro con transparencia
     color: '#555', // Texto oscuro
   },
   aboutText: {

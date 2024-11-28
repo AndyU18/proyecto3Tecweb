@@ -129,7 +129,7 @@ const ContactPage = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1912.7790523596866!2d-68.12064225472258!3d-16.497898464268175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1732762074775!5m2!1ses-419!2sbo"
             width="100%"
-            height="400"
+            height="670"
             style={styles.map}
             allowFullScreen=""
             loading="lazy"
