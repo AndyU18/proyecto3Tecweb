@@ -79,7 +79,7 @@ const LandingPage = () => {
         <div style={styles.categories}>
           <motion.div style={styles.categoryCard}>
             <img src={product1} alt="Calzado" style={styles.categoryImage} />
-            <h3>Calzado</h3>
+            <h3> Calzado</h3>
           </motion.div>
           <motion.div style={styles.categoryCard}>
             <img src={product4} alt="Ropa Deportiva" style={styles.categoryImage} />

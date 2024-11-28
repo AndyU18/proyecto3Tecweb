@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import logo from '../assets/logo.png';
+
 const AboutUs = () => {
   const [inView, setInView] = useState(false);
 
@@ -54,6 +56,7 @@ const AboutUs = () => {
         transition={{ duration: 1 }}
         style={styles.header}
       >
+        <img src={logo} alt="Logo de la tienda" style={{ width: '500px' }} /> 
         <h1 style={styles.title}>Acerca de Nosotros</h1>
         <p style={styles.subtitle}>Conoce nuestra historia, misión, visión y las marcas que representamos</p>
       </motion.header>
