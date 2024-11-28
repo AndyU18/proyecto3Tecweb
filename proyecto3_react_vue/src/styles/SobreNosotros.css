@@ -1,0 +1,186 @@
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --background-color: #f4f6f7;
+}
+
+/* Advanced About Us Page Styles */
+.about-us-advanced {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero-section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.impact-metrics {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.metric-grid {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metric-item {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.section-nav-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.section-nav-button.active {
+  background-color: #f0a500;
+  color: white;
+}
+
+.interactive-sections {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.company-timeline {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -40px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: #f0a500;
+  border-radius: 50%;
+}
+
+.team-culture {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.final-cta {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.final-cta h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.final-cta button {
+  background: white;
+  color: var(--accent-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.store-location {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.store-location-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.store-info {
+  flex: 1;
+}
+
+.store-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.store-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.store-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.store-details h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.store-map {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
