@@ -1,0 +1,15 @@
+.footer {
+    background-color: #333; /* Fondo oscuro para contrastar */
+    color: #fff; /* Texto en blanco */
+    text-align: center;
+    padding: 1rem 0; /* Espaciado interno */
+    position: relative; /* Asegura que no se superponga al contenido */
+    width: 100%; /* Toma todo el ancho del contenedor */
+    bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 0.5rem 0; /* Ajusta el espaciado interno para pantallas pequeñas */
+    }
+  }

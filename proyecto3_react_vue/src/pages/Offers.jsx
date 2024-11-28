@@ -7,12 +7,12 @@ import "../App.css"; // Asegúrate de que la ruta sea correcta
 
 const OffersPage = () => {
   const products = [
-    { id: 1, name: 'Producto 1', price: '$100', image: 'assets/product1.jpg' },
-    { id: 2, name: 'Producto 2', price: '$150', image: 'assets/product2.jpg' },
-    { id: 3, name: 'Producto 3', price: '$200', image: 'assets/product3.jpg' },
-    { id: 4, name: 'Producto 4', price: '$250', image: 'assets/product4.jpg' },
-    { id: 5, name: 'Producto 5', price: '$300', image: 'assets/product5.jpg' },
-    { id: 6, name: 'Producto 6', price: '$350', image: 'assets/product6.jpg' },
+    { id: 1, name: 'Producto 1', price: '$100', image: 'product1.jpg' },
+    { id: 2, name: 'Producto 2', price: '$150', image: 'product1.jpg' },
+    { id: 3, name: 'Producto 3', price: '$200', image: 'product1.jpg' },
+    { id: 4, name: 'Producto 4', price: '$250', image: 'product1.jpg' },
+    { id: 5, name: 'Producto 5', price: '$300', image: 'product1.jpg' },
+    { id: 6, name: 'Producto 6', price: '$350', image: 'product1.jpg' },
   ];
 
   const settings = {
