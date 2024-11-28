@@ -109,79 +109,96 @@ const AboutUs = () => {
 };
 
 const styles = {
-  pageContainer: {
-    backgroundColor: '#f4f4f9',
-    padding: '2rem',
-    minHeight: '100vh',
-  },
-  header: {
-    backgroundColor: '#007bff',
-    color: '#fff',
-    padding: '4rem 2rem',
-    textAlign: 'center',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  title: {
-    fontSize: '2.5rem',
-    marginBottom: '0.5rem',
-  },
-  subtitle: {
-    fontSize: '1.2rem',
-  },
-  container: {
-    marginTop: '2rem',
-  },
-  historySection: {
-    marginBottom: '2rem',
-  },
-  missionVisionSection: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    gap: '2rem',
-    marginBottom: '2rem',
-  },
-  missionVisionContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    gap: '1rem',
-  },
-  mission: {
-    flex: 1,
-    backgroundColor: '#fff',
-    padding: '1rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  vision: {
-    flex: 1,
-    backgroundColor: '#fff',
-    padding: '1rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  brandsSection: {
-    marginBottom: '2rem',
-  },
-  sliderItem: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  brandImage: {
-    width: '100%',
-    height: 'auto',
-    borderRadius: '8px',
-  },
-  testimonialsSection: {
-    backgroundColor: '#fff',
-    padding: '2rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  testimonial: {
-    marginBottom: '1rem',
-  },
-};
-
-export default AboutUs;
+    pageContainer: {
+      backgroundColor: '#f4f4f9', // Fondo claro
+      padding: '2rem',
+      minHeight: '100vh',
+      fontFamily: '"Roboto Condensed", sans-serif', // Fuente para el texto
+    },
+    header: {
+      backgroundColor: '#003366', // Fondo oscuro para el encabezado
+      color: '#fff', // Texto blanco para el contraste
+      padding: '4rem 2rem',
+      textAlign: 'center',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      fontFamily: '"Sixtyfour Convergence", sans-serif', // Fuente para los títulos
+    },
+    title: {
+      fontSize: '3rem', // Tamaño de fuente más grande
+      marginBottom: '0.5rem',
+      fontWeight: 'bold',
+    },
+    subtitle: {
+      fontSize: '1.5rem', // Subtítulo con fuente mayor
+      fontStyle: 'italic',
+    },
+    container: {
+      marginTop: '2rem',
+    },
+    historySection: {
+      marginBottom: '2rem',
+      backgroundColor: '#ffffff', // Fondo blanco para secciones internas
+      padding: '1.5rem',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      color: '#333', // Texto oscuro para legibilidad
+    },
+    missionVisionSection: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: '2rem',
+      marginBottom: '2rem',
+    },
+    missionVisionContainer: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: '1rem',
+    },
+    mission: {
+      flex: 1,
+      backgroundColor: '#f9f9f9', // Fondo gris claro
+      padding: '1.5rem',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      color: '#333',
+    },
+    vision: {
+      flex: 1,
+      backgroundColor: '#f9f9f9',
+      padding: '1.5rem',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      color: '#333',
+    },
+    brandsSection: {
+      marginBottom: '2rem',
+    },
+    sliderItem: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    brandImage: {
+      width: '100%',
+      height: 'auto',
+      borderRadius: '8px',
+    },
+    testimonialsSection: {
+      backgroundColor: '#ffffff', // Fondo blanco para testimonios
+      padding: '2rem',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      color: '#333',
+    },
+    testimonial: {
+      marginBottom: '1rem',
+      fontStyle: 'italic',
+    },
+    testimonialAuthor: {
+      fontWeight: 'bold',
+    },
+  };
+  
+  export default AboutUs;
+  
