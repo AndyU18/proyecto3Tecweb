@@ -30,12 +30,11 @@ footer {
 .card {
   padding: 1rem;
   margin: 0.5rem;
-  background: #fff;
+  background: #333;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  text-decoration: none;
-  color: inherit;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -49,18 +48,71 @@ footer {
 }
 
 .card h2, .card p {
-  color: #000; /* Cambia el color del texto a negro */
+  color: #ffffff; /* Cambia el color del texto a negro */
 }
 
-.product-detail {
+.buy-button {
+  background-color: #575757;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.buy-button:hover {
+  background-color: #616161;
+}
+
+
+.blurred {
+  filter: blur(5px);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.modal.show {
+  opacity: 1;
+}
+.modal-content {
+  background: #333;
   padding: 2rem;
+  border-radius: 8px;
   text-align: center;
+  position: relative;
+  z-index: 10; /* Asegura que el contenido del modal esté por encima del fondo borroso */
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.modal.show .modal-content {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.product-detail .product-image {
+.modal-content .product-image {
   width: 50%;
   height: auto;
   border-radius: 8px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
