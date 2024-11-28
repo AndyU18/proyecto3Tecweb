@@ -1,57 +1,47 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import LandingPage from './pages/LandingPage';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
+import Offers from './pages/Offers';
+import AboutUs from './pages/AboutUs';
 import './App.css';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import SobreNosotros from './pages/SobreNosotros';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function App() {
-  const [count, setCount] = useState(0);
 
+
+const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about-us">Sobre Nosotros</Link>
-            </li>
-            <li> <a href="/about-us" target="_blank" rel="noopener noreferrer">Sobre Nosotros redirecion</a> </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<SobreNosotros />} />
-        </Routes>
-
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div style={styles.appContainer}>
+        <Navbar />
+        <div style={styles.content}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/offers" element={<Offers />} />
+            <Route path="/about-us" element={<AboutUs />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </BrowserRouter>
+    </Router>
   );
-}
+};
 
-function Home() {
-  return <h1>Home</h1>;
-}
+const styles = {
+  appContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh', // Asegura que el contenedor ocupe toda la pantalla.
+  },
+  content: {
+    flex: 1, // Permite que este área crezca para llenar el espacio disponible.
+  },
+};
 
 export default App;
