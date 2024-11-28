@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-
 const LandingPage = () => {
   const products = [
     { id: 1, name: 'Producto 1', price: '$100', image: 'product1.jpg' },
@@ -40,13 +39,25 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section style={styles.hero}>
         <ReactPlayer
-          url="https://www.w3schools.com/html/mov_bbb.mp4"
+          url="/assets/video_hero_section.mp4" 
           playing
           loop
           muted
           width="100%"
           height="100%"
           style={styles.video}
+          config={{
+            youtube: {
+              playerVars: {
+                controls: 0,           // Desactivar los controles de YouTube
+                showinfo: 0,           // Desactivar el título
+                modestbranding: 1,     // Ocultar el logo de YouTube
+                rel: 0,                // Desactivar videos relacionados
+                fs: 0,                 // Desactivar la opción de pantalla completa
+                iv_load_policy: 3,     // Desactivar las anotaciones (en caso de que el video las tenga)
+              },
+            },
+          }}
         />
         <div style={styles.heroContent}>
           <h1 style={styles.heroTitle}>Bienvenidos a Nuestra Tienda</h1>
