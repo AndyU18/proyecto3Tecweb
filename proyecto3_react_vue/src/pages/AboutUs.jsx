@@ -148,7 +148,7 @@ const styles = {
         color: '#f4f4f9', // Texto claro para contraste
     },
     header: {
-        backgroundColor: '#003366', // Fondo oscuro para el encabezado
+        backgroundColor: '#1a1a1a', // Fondo oscuro para el encabezado
         color: '#fff', // Texto blanco para el contraste
         padding: '4rem 2rem',
         textAlign: 'center',

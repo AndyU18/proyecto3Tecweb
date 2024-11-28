@@ -67,15 +67,17 @@ const ContactPage = () => {
 
 const styles = {
   pageContainer: {
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#1a1a1a',
     padding: '2rem',
     minHeight: '100vh',
+    width: '100%', // Asegura que ocupe todo el ancho de la pantalla
+    margin: 0,     // Elimina márgenes extra
   },
   title: {
     textAlign: 'center',
     margin: '2rem 0',
     fontSize: '2.5rem',
-    color: '#333',
+    color: '#fff',
   },
   container: {
     display: 'flex',

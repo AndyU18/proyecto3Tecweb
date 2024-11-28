@@ -17,6 +17,7 @@ const styles = {
     padding: '1rem 0', // Espaciado interno
     position: 'relative', // Asegura que no se superponga al contenido
     width: '100vw', // Toma todo el ancho de la ventana
+    left: 0,
   },
 };
 
