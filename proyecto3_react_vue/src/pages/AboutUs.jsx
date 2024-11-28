@@ -140,101 +140,102 @@ const AboutUs = () => {
 };
 
 const styles = {
-  pageContainer: {
-    backgroundColor: '#f4f4f9', // Fondo claro
-    padding: '2rem',
-    minHeight: '100vh',
-    fontFamily: '"Roboto Condensed", sans-serif', // Fuente para el texto
-  },
-  header: {
-    backgroundColor: '#003366', // Fondo oscuro para el encabezado
-    color: '#fff', // Texto blanco para el contraste
-    padding: '4rem 2rem',
-    textAlign: 'center',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    fontFamily: '"Lato", sans-serif', // Fuente para los títulos
-  },
-  title: {
-    fontSize: '3rem', // Tamaño de fuente más grande
-    marginBottom: '0.5rem',
-    fontWeight: 'bold',
-  },
-  subtitle: {
-    fontSize: '1.5rem', // Subtítulo con fuente mayor
-    fontStyle: 'italic',
-  },
-  container: {
-    marginTop: '2rem',
-  },
-  historySection: {
-    marginBottom: '2rem',
-    backgroundColor: '#ffffff', // Fondo blanco para secciones internas
-    padding: '1.5rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    color: '#333', // Texto oscuro para legibilidad
-  },
-  missionVisionSection: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    gap: '2rem',
-    marginBottom: '2rem',
-  },
-  missionVisionContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    gap: '1rem',
-  },
-  mission: {
-    flex: 1,
-    backgroundColor: '#f9f9f9', // Fondo gris claro
-    padding: '1.5rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    color: '#333',
-  },
-  vision: {
-    flex: 1,
-    backgroundColor: '#f9f9f9',
-    padding: '1.5rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    color: '#333',
-  },
-  brandsSection: {
-    marginBottom: '2rem',
-  },
-  sliderItem: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  brandImage: {
-    width: '200px',
-    height: '100px',
-    objectFit: 'contain', 
-    borderRadius: '8px',
-  },
-  testimonialsSection: {
-    backgroundColor: '#ffffff', // Fondo blanco para testimonios
-    padding: '2rem',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    color: '#333',
-  },
-  testimonial: {
-    marginBottom: '1rem',
-    fontStyle: 'italic',
-  },
-  testimonialAuthor: {
-    fontWeight: 'bold',
-  },
-  p:{
-    textAlign: 'center',
-    color: '#333',
-    fontSize: '1.5rem',
-  }
+    pageContainer: {
+        backgroundColor: '#1a1a1a', // Fondo oscuro
+        padding: '2rem',
+        minHeight: '100vh',
+        fontFamily: '"Roboto Condensed", sans-serif', // Fuente para el texto
+        color: '#f4f4f9', // Texto claro para contraste
+    },
+    header: {
+        backgroundColor: '#003366', // Fondo oscuro para el encabezado
+        color: '#fff', // Texto blanco para el contraste
+        padding: '4rem 2rem',
+        textAlign: 'center',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        fontFamily: '"Lato", sans-serif', // Fuente para los títulos
+    },
+    title: {
+        fontSize: '3rem', // Tamaño de fuente más grande
+        marginBottom: '0.5rem',
+        fontWeight: 'bold',
+    },
+    subtitle: {
+        fontSize: '1.5rem', // Subtítulo con fuente mayor
+        fontStyle: 'italic',
+    },
+    container: {
+        marginTop: '2rem',
+    },
+    historySection: {
+        marginBottom: '2rem',
+        backgroundColor: '#333333', // Fondo oscuro para secciones internas
+        padding: '1.5rem',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        color: '#f4f4f9', // Texto claro para legibilidad
+    },
+    missionVisionSection: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '2rem',
+        marginBottom: '2rem',
+    },
+    missionVisionContainer: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '1rem',
+    },
+    mission: {
+        flex: 1,
+        backgroundColor: '#4d4d4d', // Fondo gris oscuro
+        padding: '1.5rem',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        color: '#f4f4f9',
+    },
+    vision: {
+        flex: 1,
+        backgroundColor: '#4d4d4d',
+        padding: '1.5rem',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        color: '#f4f4f9',
+    },
+    brandsSection: {
+        marginBottom: '2rem',
+    },
+    sliderItem: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    brandImage: {
+        width: '200px',
+        height: '100px',
+        objectFit: 'contain', 
+        borderRadius: '8px',
+    },
+    testimonialsSection: {
+        backgroundColor: '#333333', // Fondo oscuro para testimonios
+        padding: '2rem',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        color: '#f4f4f9',
+    },
+    testimonial: {
+        marginBottom: '1rem',
+        fontStyle: 'italic',
+    },
+    testimonialAuthor: {
+        fontWeight: 'bold',
+    },
+    p:{
+        textAlign: 'center',
+        color: '#f4f4f9',
+        fontSize: '1.5rem',
+    }
 };
 
 export default AboutUs;
