@@ -5,20 +5,26 @@ import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import product1 from '../assets/product1.jpg';
+import product2 from '../assets/product2.jpg';
+import product3 from '../assets/product3.jpg';
+import product4 from '../assets/product4.jpg';
+import product5 from '../assets/product5.jpg';
+import product6 from '../assets/product6.jpg';
 
 const LandingPage = () => {
   const products = [
-    { id: 1, name: 'Producto 1', price: '$100', image: 'product1.jpg' },
-    { id: 2, name: 'Producto 2', price: '$150', image: 'product2.jpg' },
-    { id: 3, name: 'Producto 3', price: '$200', image: 'product3.jpg' },
-    { id: 4, name: 'Producto 4', price: '$250', image: 'product4.jpg' },
-    { id: 5, name: 'Producto 5', price: '$300', image: 'product5.jpg' },
-    { id: 6, name: 'Producto 6', price: '$350', image: 'product6.jpg' },
+    { id: 1, name: 'Zapatillas Running', price: '$100', image: product1 },
+    { id: 2, name: 'Balón de Fútbol', price: '$50', image: product2 },
+    { id: 3, name: 'Camiseta Deportiva', price: '$25', image: product3 },
+    { id: 4, name: 'Guantes de Boxeo', price: '$75', image: product4 },
+    { id: 5, name: 'Mochila Deportiva', price: '$40', image: product5 },
+    { id: 6, name: 'Reloj Fitness', price: '$120', image: product6 },
   ];
 
   const comments = [
-    { id: 1, stars: '★★★★★', text: 'Excelente servicio!', name: 'Juan' },
-    { id: 2, stars: '★★★★☆', text: 'Buena calidad.', name: 'María' },
+    { id: 1, stars: '★★★★★', text: 'Excelente servicio y productos!', name: 'Juan' },
+    { id: 2, stars: '★★★★☆', text: 'Buena calidad a precios justos.', name: 'María' },
     { id: 3, stars: '★★★★★', text: 'Superó mis expectativas!', name: 'Carlos' },
   ];
 
@@ -39,25 +45,13 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section style={styles.hero}>
         <ReactPlayer
-          url="/assets/video_hero_section.mp4" 
+          url="/assets/video_hero_section.mp4"
           playing
           loop
           muted
           width="100%"
           height="100%"
           style={styles.video}
-          config={{
-            youtube: {
-              playerVars: {
-                controls: 0,           // Desactivar los controles de YouTube
-                showinfo: 0,           // Desactivar el título
-                modestbranding: 1,     // Ocultar el logo de YouTube
-                rel: 0,                // Desactivar videos relacionados
-                fs: 0,                 // Desactivar la opción de pantalla completa
-                iv_load_policy: 3,     // Desactivar las anotaciones (en caso de que el video las tenga)
-              },
-            },
-          }}
         />
         <div style={styles.heroContent}>
           <h1 style={styles.heroTitle}>Bienvenidos a Nuestra Tienda</h1>
@@ -65,10 +59,38 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Carrusel de Texto */}
-      <div style={styles.textCarousel}>
-        <marquee>¡Oferta del día! Descuentos exclusivos en productos seleccionados 🚀</marquee>
+      {/* Banner */}
+      <div style={styles.banner}>
+        <h2>¡Oferta Exclusiva del Mes! Obtén hasta un 50% de descuento en tus compras</h2>
       </div>
+
+      {/* Sobre Nosotros */}
+      <section style={styles.aboutSection}>
+        <h2 style={styles.sectionTitle}>Sobre Nosotros</h2>
+        <p style={styles.aboutText}>
+          Somos una tienda comprometida con ofrecer productos de alta calidad para todos los amantes del deporte.
+          Nuestro objetivo es que encuentres lo mejor en un solo lugar. ¡Gracias por confiar en nosotros!
+        </p>
+      </section>
+
+      {/* Categorías Destacadas */}
+      <section>
+        <h2 style={styles.sectionTitle}>Categorías</h2>
+        <div style={styles.categories}>
+          <motion.div style={styles.categoryCard}>
+            <img src={product1} alt="Calzado" style={styles.categoryImage} />
+            <h3>Calzado</h3>
+          </motion.div>
+          <motion.div style={styles.categoryCard}>
+            <img src={product4} alt="Ropa Deportiva" style={styles.categoryImage} />
+            <h3>Ropa Deportiva</h3>
+          </motion.div>
+          <motion.div style={styles.categoryCard}>
+            <img src={product2} alt="Accesorios" style={styles.categoryImage} />
+            <h3>Accesorios</h3>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Productos */}
       <section>
@@ -79,32 +101,10 @@ const LandingPage = () => {
               <img src={product.image} alt={product.name} style={styles.productImage} />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
+              <button style={styles.viewMoreButton}>Agregar al carrito</button>
             </div>
           ))}
-          <div style={styles.card}>
-            <button style={styles.viewMoreButton}>Ver más</button>
-          </div>
         </Slider>
-      </section>
-
-      {/* Imagen y Texto con Animación */}
-      <section style={styles.imageTextSection}>
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src="about-us.jpg" alt="Nosotros" style={styles.image} />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          style={styles.textContainer}
-        >
-          <h2>Sobre Nosotros</h2>
-          <p>Conoce más sobre nuestra misión y valores.</p>
-        </motion.div>
       </section>
 
       {/* Comentarios */}
@@ -121,23 +121,32 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Ofertas */}
-      <section style={styles.offers}>
-        <h2 style={styles.sectionTitle}>Ofertas</h2>
-        <marquee>¡No te pierdas nuestras promociones exclusivas! 🎉</marquee>
-      </section>
+      {/* Footer */}
+      <footer style={styles.footer}>
+        <div>
+          <h4>Contacto</h4>
+          <p>Email: contacto@tiendadeportiva.com</p>
+          <p>Tel: +123 456 789</p>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <p>Facebook | Instagram | Twitter</p>
+        </div>
+        <div>
+          <h4>Políticas</h4>
+          <p>Privacidad | Términos</p>
+        </div>
+      </footer>
     </div>
   );
 };
 
 const styles = {
+  // Sección principal con video
   hero: {
     position: 'relative',
-    height: '70vh',
-    overflow: 'hidden',
-  },
-  video: {
-    objectFit: 'cover',
+    height: '400px',
+    backgroundColor: '#000', // Fondo negro como respaldo
   },
   heroContent: {
     position: 'absolute',
@@ -146,76 +155,143 @@ const styles = {
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
     color: '#fff',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)', // Sombra para destacar texto
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Transparencia para el fondo del texto
+    padding: '1rem',
+    borderRadius: '8px',
   },
   heroTitle: {
-    fontSize: '3rem',
-    margin: 0,
+    fontSize: '2.5rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
   },
   heroDescription: {
-    fontSize: '1.5rem',
-    margin: 0,
-  },
-  textCarousel: {
-    backgroundColor: '#f8f8f8',
-    padding: '1rem 0',
-    textAlign: 'center',
     fontSize: '1.2rem',
+    color: '#ddd',
   },
+
+  // Banner de oferta
+  banner: {
+    background: 'rgba(255, 87, 34, 0.9)', // Transparencia ligera en naranja
+    color: '#fff',
+    textAlign: 'center',
+    padding: '1rem',
+    fontWeight: 'bold',
+    borderRadius: '8px',
+    margin: '1rem 0',
+  },
+
+  // Sección de títulos
   sectionTitle: {
     textAlign: 'center',
     margin: '2rem 0',
+    color: '#333', // Gris oscuro
+    fontWeight: 'bold',
+    fontSize: '1.8rem',
   },
+
+  // Sección de "Sobre Nosotros"
+  aboutSection: {
+    padding: '2rem',
+    textAlign: 'center',
+    backgroundColor: 'rgba(244, 244, 244, 0.9)', // Fondo gris claro con transparencia
+    color: '#555', // Texto oscuro
+  },
+  aboutText: {
+    fontSize: '1.2rem',
+    lineHeight: '1.6',
+  },
+
+  // Categorías destacadas
+  categories: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    padding: '2rem',
+  },
+  categoryCard: {
+    textAlign: 'center',
+    flex: 1,
+    margin: '0 1rem',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Fondo blanco con transparencia
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    padding: '1rem',
+    transition: 'transform 0.2s ease',
+  },
+  categoryCardHover: {
+    transform: 'scale(1.05)',
+  },
+  categoryImage: {
+    width: '80%',
+    maxHeight: '150px', // Límite para altura de imágenes
+    objectFit: 'cover', // Mantiene proporción y recorta si es necesario
+    borderRadius: '8px',
+  },
+
+  // Tarjetas de productos
   card: {
     padding: '1rem',
     textAlign: 'center',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Fondo blanco con transparencia
     borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    margin: '1rem',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+  },
+  cardHover: {
+    transform: 'scale(1.02)',
+    boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
   },
   productImage: {
     width: '100%',
-    height: 'auto',
+    maxHeight: '200px', // Límite de tamaño para las imágenes de producto
+    objectFit: 'cover',
     borderRadius: '8px',
   },
   viewMoreButton: {
-    padding: '0.8rem 1.5rem',
-    backgroundColor: '#007bff',
+    backgroundColor: '#ff5722', // Naranja vibrante
     color: '#fff',
     border: 'none',
-    borderRadius: '5px',
+    padding: '0.5rem 1rem',
+    borderRadius: '4px',
     cursor: 'pointer',
+    fontWeight: 'bold',
+    transition: 'background-color 0.2s ease',
   },
-  imageTextSection: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '2rem',
-    margin: '4rem 0',
-    padding: '0 2rem',
+  viewMoreButtonHover: {
+    backgroundColor: '#e64a19', // Color más oscuro al pasar el cursor
   },
-  image: {
-    width: '50%',
-    borderRadius: '8px',
-  },
-  textContainer: {
-    flex: 1,
-  },
+
+  // Comentarios
   comments: {
     display: 'flex',
-    gap: '1rem',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '2rem',
+    backgroundColor: 'rgba(249, 249, 249, 0.9)', // Fondo muy claro con transparencia
   },
   commentCard: {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Fondo blanco con transparencia
     padding: '1rem',
-    backgroundColor: '#f0f0f0',
+    margin: '1rem 0',
     borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    width: '80%',
+    maxWidth: '600px',
     textAlign: 'center',
-    width: '200px',
+    color: '#333',
   },
-  offers: {
-    backgroundColor: '#f8f8f8',
-    padding: '1rem 0',
-    textAlign: 'center',
+
+  // Footer
+  footer: {
+    backgroundColor: 'rgba(34, 34, 34, 0.9)', // Fondo oscuro con transparencia
+    color: '#fff',
+    padding: '2rem',
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
   },
 };
+
 
 export default LandingPage;
