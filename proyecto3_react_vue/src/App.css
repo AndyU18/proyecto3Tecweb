@@ -16,11 +16,32 @@ footer {
   position: relative;
 }
 
-.offers-page {
+.products-page {
   padding: 2rem;
   text-align: center;
 }
 
+.products-title {
+  color: #000; /* Cambia el color del título a negro */
+}
+
+.products-subtitle {
+  color: #000; /* Cambia el color del subtítulo a negro */
+}
+
+
+
+.offers-page {
+  padding: 2rem;
+  text-align: center;
+}
+.offers-title {
+  color: #000; /* Cambia el color del título a negro */
+}
+
+.offers-subtitle {
+  color: #000; /* Cambia el color del subtítulo a negro */
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

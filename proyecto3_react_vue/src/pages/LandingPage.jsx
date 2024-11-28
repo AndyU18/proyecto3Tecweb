@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import product1 from '../assets/product1.jpg';
-import product2 from '../assets/product2.jpg';
-import product3 from '../assets/product3.jpg';
-import product4 from '../assets/product4.jpg';
-import product5 from '../assets/product5.jpg';
-import product6 from '../assets/product6.jpg';
+import product1 from '/product1.jpg';
+import product2 from '/product2.jpg';
+import product3 from '/product3.jpg';
+import product4 from '/product4.jpg';
+import product5 from '/product5.jpg';
+import product6 from '/product6.jpg';
 
 const LandingPage = () => {
   const products = [
