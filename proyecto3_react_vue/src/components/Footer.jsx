@@ -15,7 +15,7 @@ const styles = {
     textAlign: 'center',
     padding: '1rem 0', // Espaciado interno
     position: 'relative', // Asegura que no se superponga al contenido
-    width: '100vw', // Toma todo el ancho de la ventana
+    width: '84vw', // Toma todo el ancho de la ventana
   },
 };
 
