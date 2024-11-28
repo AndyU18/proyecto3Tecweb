@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Offers from './pages/Offers';
 import AboutUs from './pages/AboutUs';
+import ProductDetail from './pages/ProductDetail';
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/offers" element={<Offers />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
           </Routes>
         </div>
         <Footer />
